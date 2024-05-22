@@ -1,0 +1,2 @@
+Sequential Search: Element found at index 1
+Binary Search: Element found at index 1

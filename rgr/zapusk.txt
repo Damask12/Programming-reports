@@ -1,0 +1,21 @@
+создание обьектного файла
+gcc -c .\main.c
+
+Создание обьектного файла func.o
+gcc -c .\func.c -fpic
+
+Создание статической библиотеки
+gcc *.o -shared -o lib.so
+
+сборка динамической библиотеки
+gcc -o dynamic .\main.o -L. .\lib.so
+
+запуск
+.\dynamic.exe .\input.txt o.txt 
+
+если изменить:
+gcc -c .\main.c
+
+gcc -o dynamic .\main.o -L. .\lib.so
+
+.\dynamic.exe .\input.txt o.txt 
